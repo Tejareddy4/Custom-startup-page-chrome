@@ -5,31 +5,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex" />
-  <!-- Removed class attribute from link tag as it is not valid -->
+  <!-- Link to the main stylesheet. Modify "css/style.css" to change the theme or add custom styles -->
   <link rel="stylesheet" href="css/style.css">
-  <title>~+</title>
+  <title>~+</title> <!-- Change the title to customize the tab name -->
 </head>
 
 <body>
+  <!-- Main clock display. Customize the "clock" class in CSS for different clock styles -->
   <div class="center disable-select"><time class="clock" id="clock"></time></div>
+  
+  <!-- Search form. Modify the "search-form" and "search-input" classes for custom styles -->
   <form autocomplete="off" class="center overlay search-form" id="search-form" spellcheck="false">
     <div>
       <input class="search-input" id="search-input" title="search" type="text" />
+      <!-- Suggestions dropdown. Style "search-suggestions" in CSS for custom dropdown styles -->
       <ul class="search-suggestions" id="search-suggestions"></ul>
     </div>
   </form>
+  
+  <!-- Help section. Customize the "help" class for different styles or positioning -->
   <aside class="center help overlay disable-select" id="help"></aside>
 
-  <script src="js/svg-inject.min.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/body.js"></script>
-  <script src="js/clock.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/help.js"></script>
-  <script src="js/influencers.js"></script>
-  <script src="js/queryParser.js"></script>
-  <script src="js/suggester.js"></script>
-  <script src="js/index.js"></script>
+  <!-- JavaScript files for functionality. Add or remove scripts to customize features -->
+  <script src="js/svg-inject.min.js"></script> <!-- SVG injection for icons -->
+  <script src="js/config.js"></script> <!-- Site configuration script -->
+  <script src="js/body.js"></script> <!-- Script for body element manipulations -->
+  <script src="js/clock.js"></script> <!-- Clock functionality -->
+  <script src="js/form.js"></script> <!-- Search form functionality -->
+  <script src="js/help.js"></script> <!-- Help section functionality -->
+  <script src="js/influencers.js"></script> <!-- Influencer script for dynamic content -->
+  <script src="js/queryParser.js"></script> <!-- Parses query strings -->
+  <script src="js/suggester.js"></script> <!-- Suggestion engine for the search form -->
+  <script src="js/index.js"></script> <!-- Main JavaScript file for custom scripts -->
 </body>
 
 </html>
